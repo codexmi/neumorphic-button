@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.body-light {
+  background-color: #ececec;
+}
+
+.body-dark {
+  background-color: #2C2F34;
+}
+
+.switch-light {
+  height: 200px;
+  width: 200px;
+  -webkit-appearance: none;
+  box-shadow:
+    -10px -10px 15px rgba(255, 255, 255, 0.5),
+    10px 10px 15px rgba(70, 70, 0, 0.12);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 8px solid #ececec;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch-light:after {
+  font-family: FontAwesome;
+  content: '\f011';
+  color: #7a7a7a;
+  font-size: 70px;
+}
+
+.switch-dark {
+  height: 200px;
+  width: 200px;
+  -webkit-appearance: none;
+  box-shadow:
+    -5px -5px 10px rgba(62, 73, 88, 0.5),
+    10px 10px 15px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border: 8px solid #2C2F34;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.switch-dark:after {
+  font-family: FontAwesome;
+  content: '\f011';
+  color: #7a7a7a;
+  font-size: 70px;
+}
+
+.switch-dark:checked {
+  box-shadow:
+    -5px -5px 10px rgba(62, 73, 88, 0.5),
+    10px 10px 15px rgba(0, 0, 0, 0.12),
+    inset -5px -5px 10px rgba(62, 73, 88, 0.5),
+    inset 10px 10px 15px rgba(0, 0, 0, 0.12);
+}
+
+.switch-dark:checked:after {
+  color: #23CEDF;
+}
